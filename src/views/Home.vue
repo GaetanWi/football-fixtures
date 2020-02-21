@@ -2,7 +2,6 @@
     <div class="match-cards">
         <MatchCard v-for="fixture in dailyFeedData.response.g" :key="fixture.id" 
             :fixture="fixture"/>
-        <pre>{{ dailyFeedData }}</pre>
     </div>
 </template>
 
