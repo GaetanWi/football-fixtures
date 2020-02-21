@@ -10,7 +10,7 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 
 import Menu from '@/components/common/Menu.vue';
-import MatchCard from '@/components/MatchCard.vue';
+import MatchCard from '@/components/MatchCard/MatchCard.vue';
 import ScorebatService from '@/services/ScorebatService.ts';
 
 // Even though this is a page, it still needs to be defined as a Component. 
