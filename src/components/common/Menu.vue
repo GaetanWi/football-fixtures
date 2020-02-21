@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar dense dark>
-        <v-toolbar-title>Football Fixtures</v-toolbar-title>
+        <v-toolbar-title><v-icon style="margin: 0 15px;">sports_soccer</v-icon>Football Fixtures</v-toolbar-title>
     </v-app-bar>
   </div>
 </template>
