@@ -9,7 +9,6 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 
-import Menu from '@/components/common/Menu.vue';
 import MatchCard from '@/components/MatchCard/MatchCard.vue';
 import ScorebatService from '@/services/ScorebatService.ts';
 
@@ -17,7 +16,6 @@ import ScorebatService from '@/services/ScorebatService.ts';
 // In this definition, we'll list the different components this component is using. 
 @Component({
     components: {
-        Menu,
         MatchCard,
     }
 })

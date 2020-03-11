@@ -11,7 +11,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component
-export default class Menu extends Vue {}
+export default class NavBar extends Vue {}
 </script>
 
 <style lang="scss" scoped>

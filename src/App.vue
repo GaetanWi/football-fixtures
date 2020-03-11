@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Menu />
+    <NavBar />
     <router-view></router-view>
   </div>
 </template>
@@ -8,11 +8,11 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue';
-import Menu from '@/components/common/Menu.vue';
+import NavBar from '@/components/common/NavBar.vue';
 
 @Component({
   components: {
-    Menu,
+    NavBar,
   },
 })
 export default class App extends Vue {}
