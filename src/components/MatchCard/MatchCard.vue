@@ -15,6 +15,7 @@
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                     <!-- You could add whatever you want in here -->
+                    One day, I'll add something there. But not today!
                 </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
