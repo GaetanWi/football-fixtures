@@ -11,7 +11,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import { PropSync } from 'vue-property-decorator';
+import { PropSync, Watch } from 'vue-property-decorator';
 
 import ScorebatService from '@/services/ScorebatService';
 import LeagueBoardHeader from '@/components/LeagueBoard/LeagueBoardHeader.vue';
@@ -26,10 +26,17 @@ import LeagueLeaderBoard from '@/components/LeagueBoard/LeagueLeaderBoard.vue';
 export default class LeagueBoard extends Vue {
     public boardData: any = {};
 
+
     public leagueInfos = {};
     public leaderboard = {};
 
     created() {
+        this.initLeaderboard();
+    }
+
+    // The watch here help to refresh whenever the route param is changing
+    @Watch('$route.params.leagueId')
+    initLeaderboard() {
         ScorebatService.getBoardInfo(this.$route.params.leagueId).then((response) => {
             this.boardData = response.data;
 

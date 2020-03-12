@@ -1,5 +1,5 @@
 <template>
-    <div class="match-cards">
+    <div class="match-cards" v-if="!!dailyFeedData && !!dailyFeedData.response">
         <MatchCard v-for="fixture in dailyFeedData.response.g" :key="fixture.id" 
             :fixture="fixture"/>
     </div>
