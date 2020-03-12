@@ -1,7 +1,6 @@
 <template>
     <div>
-        <!-- Just to show how to access route params from template -->
-        Id League = {{ $route.params.leagueId }}
+        <!-- Just to show how to access route params from template : Id League = {{ $route.params.leagueId }}-->
 
         <LeagueBoardHeader :leagueInfos="leagueInfos" />
         <LeagueLeaderBoard :leaderboard="leaderboard" />
