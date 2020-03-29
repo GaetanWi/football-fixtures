@@ -12,18 +12,18 @@
         <!-- Postponed -->
         <div class="not-over" v-else-if="fixture.s === 'Pst'">
             <div class="score-line"></div>
-            <div class="sub-score-line">ANN</div>
+            <div class="sub-score-line">{{ $t('fixture.postponned_shortened')}}</div>
         </div>
         <!-- Full Time -->
         <div class="over" v-else-if="fixture.s === 'FT'">
             <div class="score-line">{{ fixture.sc1 }} - {{ fixture.sc2 }}</div>
-            <div class="sub-score-line">TER</div>
+            <div class="sub-score-line">{{ $t('fixture.fulltime_shortened')}}</div>
         </div>
         <!-- On Going -->
         <div class="on-going" v-else>
             <div class="score-line">{{ fixture.sc1 }} - {{ fixture.sc2 }}</div>
             <div class="sub-score-line">
-                <div v-if="fixture.s === 'HT'">MT</div>
+                <div v-if="fixture.s === 'HT'">{{ $t('fixture.halftime_shortened') }}</div>
             </div>
         </div>        
     </div>

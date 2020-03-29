@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "home": "Accueil",
+        "leagues": "Championnats"
+    },
+    "fixture" : {
+        "postponned_shortened": "ANN",
+        "fulltime_shortened": "TER",
+        "halftime_shortened": "MT"
+    },
+    "team": {
+        "name": "Nom de l'équipe"
+    },
+    "board": {
+        "ranking": "Position",
+        "played": "J",
+        "wins": "V",
+        "draws": "N",
+        "loss": "D",
+        "points": "Points"
+    }
+}

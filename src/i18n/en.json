@@ -1,0 +1,22 @@
+{
+    "menu": {
+        "home": "Home",
+        "leagues": "Leagues"
+    },
+    "fixture" : {
+        "postponned_shortened": "PST",
+        "fulltime_shortened": "FT",
+        "halftime_shortened": "HT"
+    },
+    "team": {
+        "name": "Team name"
+    },
+    "board": {
+        "ranking": "Ranking",
+        "played": "P",
+        "wins": "W",
+        "draws": "D",
+        "loss": "L",
+        "points": "Points"
+    }
+}

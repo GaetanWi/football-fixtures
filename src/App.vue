@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <v-app id="app">
         <NavBar :menu="menu" @menu-changed="updateMenu" />
         <NavMenu :menu="menu" />
 
@@ -8,7 +8,7 @@
                 <router-view />
             </v-container>
         </v-content>
-    </div>
+    </v-app>
 </template>
 
 <script lang="ts">

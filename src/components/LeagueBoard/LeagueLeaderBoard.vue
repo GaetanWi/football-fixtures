@@ -3,13 +3,13 @@
         <v-simple-table>
             <thead>
                 <tr>
-                    <th class="text-left">Position</th>
-                    <th class="text-left">Nom d'équipe</th>
-                    <th class="text-left">Joués</th>
-                    <th class="text-left">Victoires</th>
-                    <th class="text-left">Nuls</th>
-                    <th class="text-left">Défaites</th>
-                    <th class="text-left">Points</th>
+                    <th class="text-left">{{ $t('board.ranking') }}</th>
+                    <th class="text-left">{{ $t('team.name') }}</th>
+                    <th class="text-left">{{ $t('board.played') }}</th>
+                    <th class="text-left">{{ $t('board.wins')}}</th>
+                    <th class="text-left">{{ $t('board.draws')}}</th>
+                    <th class="text-left">{{ $t('board.loss') }}</th>
+                    <th class="text-left">{{ $t('board.points') }}</th>
                 </tr>
             </thead>
             <tbody>

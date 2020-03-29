@@ -12,7 +12,7 @@
                     <template v-slot:activator>
                         <v-list-item>
                             <v-list-item-content>
-                                <v-list-item-title>{{ item.text }}</v-list-item-title>
+                                <v-list-item-title>{{ $t(item.text) }}</v-list-item-title>
                             </v-list-item-content>
                         </v-list-item>
                     </template>
@@ -43,7 +43,7 @@
                         <v-icon>{{ item.icon }}</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>{{ item.text }}</v-list-item-title>
+                        <v-list-item-title>{{ $t(item.text) }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </template>
@@ -63,12 +63,12 @@ export default class NavMenu extends Vue {
     public menuItems: any = [
         {
             icon: 'home',
-            text: 'Accueil',
+            text: 'menu.home',
             route: '/'
         },
         {
             icon: 'emoji_events',
-            text: 'Championnats',
+            text: 'menu.leagues',
             toggled: false,
             subMenus: [
                 // We're expecting we already know LeagueIds.
