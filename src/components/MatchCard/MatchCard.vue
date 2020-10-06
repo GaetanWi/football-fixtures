@@ -4,9 +4,9 @@
             <v-expansion-panel>
                 <v-expansion-panel-header>
                     <div class="header-content">
-                        <Team :name="fixture.s1" :id="fixture.s1Id" />
+                        <Team class="team" :name="fixture.s1" :id="fixture.s1Id" />
                         <ScorePlaceHolder :fixture="fixture" />
-                        <Team :name="fixture.s2" :id="fixture.s2Id" />
+                        <Team class="team" :name="fixture.s2" :id="fixture.s2Id" />
                     </div>
                     <!-- Workaround -->
                     <template v-slot:actions>
@@ -53,6 +53,10 @@ export default class MatchCard extends Vue {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+             
+            .team {
+                width: 30%
+            }
         }
     }
 }

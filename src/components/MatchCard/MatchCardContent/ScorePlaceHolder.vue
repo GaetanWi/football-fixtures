@@ -42,15 +42,17 @@ export default class ScorePlaceHolder extends Vue {
 
 <style lang="scss" scoped>
 .date-or-score {
+    padding-top: 30px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     max-width: 50px;
     font-weight: bold;
 
     .score-line {
-        font-size: 1.5em;
 
         .v-icon {
-            font-size: 5vh;
+            font-size: 2em;
         }
     }
 
@@ -69,5 +71,14 @@ export default class ScorePlaceHolder extends Vue {
     .over {
         color: darkgrey;
     }
+}
+
+@media (max-width: 750px) {
+    .score-line {font-size: 0.7em;}
+}
+
+@media (min-width: 751px) {
+    .score-line {font-size: 1.5em;}
+    .team {width: 40vw;}
 }
 </style>

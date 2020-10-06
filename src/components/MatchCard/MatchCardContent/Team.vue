@@ -24,7 +24,6 @@ export default class Team extends Vue {
 
 <style lang="scss" scoped>
 .team {
-    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,11 +31,24 @@ export default class Team extends Vue {
 
     .name {
         margin: 10px;
+        text-align: center;
     }
 
     .team-logo {
         margin: 0 15px;
-        max-width: 50px;
     }
+}
+
+@media (max-width: 550px) {
+    .team {width: auto;}
+    .team-logo {max-width: 30px;}
+}
+
+@media (min-width: 551px) and  (max-width: 750px) {
+    .team {width: 20vw;}
+}
+
+@media (min-width: 751px) {
+    .team {width: 40vw;}
 }
 </style>
